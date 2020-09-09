@@ -11,6 +11,10 @@ const App=()=>{
                     <br/>
                     <input type="text" id="input" placeholder="Add A item"></input>
                     <button id="btn">+</button>
+                    <ul className="list">
+                        <li>First Item</li>
+                        <li>Second Item</li>
+                    </ul>
                  </div>
             </div>
         </>
