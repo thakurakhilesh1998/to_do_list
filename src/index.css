@@ -32,6 +32,7 @@ h1{
 }
 #input
 {
+  width: 75%;
   margin: 1.4rem 0.8rem;
   border: none;
   border-bottom: 2px solid purple;
@@ -54,7 +55,7 @@ h1{
 #btn
 {
   height: 40px;
-  width: 40px;
+  width: 12%;
   border-radius: 50%;
   font-weight: 600;
   box-sizing: border-box;
@@ -69,7 +70,9 @@ h1{
 #btn:focus{
   outline: none;
 }
-
+#btn:hover{
+  background-color: seagreen;
+}
 .list
 {
   list-style-type: none;
