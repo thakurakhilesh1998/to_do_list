@@ -14,6 +14,18 @@ const App=()=>{
         });
         setListItem('');
     }
+
+    const onDeleteItem=(id)=>{
+        console.log('delete itme is clicked');
+        setList((oldList)=>{
+            return oldList.filter((itme,index)=>
+            {
+                return index!==id;
+            }
+            );
+        });
+    }
+
     return(
         <>
 
@@ -26,7 +38,7 @@ const App=()=>{
                     <button id="btn" onClick={createList}>+</button>
                     <ul className="list">
                       {  list.map((val,index)=>{
-                           return <ToDoListItem id={index} text={val}/>;
+                           return <ToDoListItem key={index} text={val} id={index} onDelete={onDeleteItem}/>;
                         })
                     }
                     </ul>
